@@ -1,0 +1,17 @@
+<p>dislpay works!</p>
+<table border="1">
+    <tr>
+        <td>name</td>
+        <td>state</td>
+        <td>email</td>
+        <td>edit</td>
+        <td>delete</td>
+    </tr>
+    <tr *ngFor="let data of products">
+        <td>{{data.name}}</td>
+        <td>{{data.state}}</td>
+        <td>{{data.email}}</td>
+        <td><a [routerLink]="['/product/edit',data._id]">Edit</a></td>
+    <td><a (click)="deleteProduct(data._id)">Delete</a></td>
+    </tr>
+</table>

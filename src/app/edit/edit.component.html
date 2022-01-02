@@ -1,0 +1,13 @@
+<p>edit works!</p>
+
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    name
+    <input type="text"formControlName="name" #name [(ngModel)]=data.name><br>
+    state
+    <input type="text" formControlName="state" #state [(ngModel)]=data.state><br>
+    email
+    <input type="email" formControlName="email" #email [(ngModel)]=data.email><br>
+    
+    <input type="submit" name="submit">
+    </form>>
